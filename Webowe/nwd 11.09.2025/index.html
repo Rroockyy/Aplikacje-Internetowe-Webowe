@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NWD</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- post i get - post dla php a get dla js-->
+    <!-- przy post name jest wymagane-->
+    <form class="Form" action="#" method="get">
+      <h1>Obliczanie NWD</h1>
+      <!-- jesli jest name i get to wartosci sa przekazywane w adresie-->
+      <!--stylowac trzeba za pomoca class, poniewaz id jest potem trudno nadpisac-->
+      <input class="NumInput" type="number" name="a" id="a" min="0" value="1" />
+      <input class="NumInput" type="number" name="b" id="b" min="0" value="1" />
+      <br>
+      <!-- buttony jest latwiej stylowac niz inputy-->
+      <input class="Button" type="submit" id="submit" value="Oblicz NWD" />
+      <input class="Button" type="reset" value="Wyczyść" />
+      <br>
+      <span class="Result" id="result"></span>
+    </form>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

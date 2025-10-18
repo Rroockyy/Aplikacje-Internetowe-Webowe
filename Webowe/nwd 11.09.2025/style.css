@@ -1,0 +1,17 @@
+.Form {
+    text-align: center;
+}
+
+.Result {
+    font-size: x-large;
+}
+
+.Button {
+    margin: 10px;
+}
+
+.NumInput{
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px, black, solid;
+}
