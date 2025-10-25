@@ -1,0 +1,17 @@
+T: Konwersja typów danych
+
+1. Array i NodeList
+
+NodeList jest specjalną kolekcją węzłów DOM, zwracana np. przez:
+- document.querySelector("p");
+- document.childNode;
+
+Array a NodeList:
+- NodeList nie ma metod tablicowych: map(), filter(), find(), some(), reduce(), include(), every()
+- NodeList razem z tablicą ma: indeksy, length, foreach
+
+Jak zamienić NodeList na Array:
+- Array.from(NodeList);
+- [...NodeList];
+
+2. Liczba losowa w JS
