@@ -1,0 +1,70 @@
+*{
+    font-family: 'Helvetica';
+}
+
+.main{
+    display: flex;
+}
+
+header, footer{
+    background-color: sienna;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.left, .right{
+    background-color: navajowhite;
+    width: 15%;
+    height: 700px;
+}
+
+.middle{
+    width: 70%;
+    height: 700px;
+    overflow: scroll;
+}
+
+img{
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: relative;
+}
+
+h3, p, a{
+    opacity: 0;
+    position: absolute;
+}
+
+h3{
+    top: 5%;
+}
+
+p{
+    top: 30%;
+}
+
+a{
+    top: 70%;
+    left: 70%;
+    background-color: sienna;
+    padding: 15px;
+}
+
+.main .block img{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.main .block:hover img{
+    opacity: 0.3;
+}
+
+.main .block:hover h3, .main .block:hover p, .main .block:hover a{
+    opacity: 1;
+}
