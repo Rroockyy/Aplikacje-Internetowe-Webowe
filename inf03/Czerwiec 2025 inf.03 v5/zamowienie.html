@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotografia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fotografia artystyczna</h1>
+    </header>
+    <figure>
+      <img src="pliki6/1.jpg" alt="obrazy do spzedaży" title="1.jpg" />
+      <img src="pliki6/2.jpg" alt="obrazy do spzedaży" title="2.jpg" />
+      <img src="pliki6/3.jpg" alt="obrazy do spzedaży" title="3.jpg" />
+      <img src="pliki6/4.jpg" alt="obrazy do spzedaży" title="4.jpg" />
+      <img src="pliki6/5.jpg" alt="obrazy do spzedaży" title="5.jpg" />
+      <img src="pliki6/6.jpg" alt="obrazy do spzedaży" title="6.jpg" />
+      <img src="pliki6/7.jpg" alt="obrazy do spzedaży" title="7.jpg" />
+      <img src="pliki6/8.jpg" alt="obrazy do spzedaży" title="8.jpg" />
+      <img src="pliki6/9.jpg" alt="obrazy do spzedaży" title="9.jpg" />
+      <img src="pliki6/10.jpg" alt="obrazy do spzedaży" title="10.jpg" />
+    </figure>
+    <main>
+      <section class="left">
+        <h3>Zamówienie</h3>
+        <label for="selectImg">Wybierz obraz: </label
+        ><input type="file" id="selectImg" accept="image/jpeg" /><br />
+        <label for="">Liczba kopii: </label><input type="number" id="copies"/><br />
+        <input type="radio" name="type" checked="true" id="shining"/>Papier błyszczący
+        <br />
+        <input type="radio" name="type" />Papier matowy <br />
+        <input type="button" value="Dodaj do koszyka" id="add"/>
+        <!-- Skrypt 1 -->
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="regulamin.html">Regulamin</a>
+          </li>
+          <li>
+            <a href="uslugi.html">Usługi</a>
+          </li>
+          <li>
+            <a href="https://pixabay.com">Zdjęcia</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="right">
+        <h3>Koszyk</h3>
+        <div id="images">
+            <!-- Skrypt 2 -->
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>Autor strony: <em>Berk</em></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

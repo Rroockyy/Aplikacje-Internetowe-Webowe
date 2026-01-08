@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto', 'Arial', 'sans-serif';
+    text-align: center;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+header, footer{
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+article{
+    padding: 40px;
+    margin: 1%;
+}
+
+@media (width >= 800px){
+    main{
+        display: flex;
+    }
+    article{
+        width: 30%;
+    }
+}
+@media (width < 800px){
+    article{
+        width: 98%;
+    }
+}
+
+.art1{
+    background-color: dodgerblue;
+}
+
+.art2{
+    background-color: limegreen;
+}
+
+.art3{
+    background-color: darkorchid;
+}
+
+img{
+    width: 70%;
+}
+
+p{
+    padding: 20px;
+}
+
+table{
+    margin: auto;
+    width: 70%;
+    border: solid steelblue 1px;
+}
+
+tr:hover{
+    background-color: steelblue;
+    color: white;
+}
