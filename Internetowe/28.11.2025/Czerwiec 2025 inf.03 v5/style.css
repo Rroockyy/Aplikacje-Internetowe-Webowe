@@ -1,0 +1,72 @@
+.left{
+    float: left;
+}
+
+footer{
+    clear: both;
+}
+
+*{
+    font-family: 'Century Gothic', 'Arial';
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+header, footer{
+    background-color: sienna;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 130%;
+}
+
+.left{
+    background-color: navajowhite;
+    margin: 10px;
+    padding: 20px;
+    width: 35%;
+    height: 400px;
+    box-shadow: 5px 5px 10px dimgray;
+}
+
+nav{
+    width: 50%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.right{
+    width: 50%;
+    height: 420px;
+    overflow: auto;
+}
+
+input, button{
+    margin-top: 20px;
+}
+
+li{
+    display: inline-block;
+}
+
+img{
+    width: 10%;
+    float: right;
+}
+
+a{
+    color: sienna;
+    padding-right: 30px;
+}
+
+a:hover{
+    color: #4C1900;
+}
+
+#images > img{
+    float: left;
+    width: 75px;
+    clear: left;
+}
