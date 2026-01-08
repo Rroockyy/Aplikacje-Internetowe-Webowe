@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer>
+        function calculate(){
+            let city = document.getElementById("Miasto").value;
+            let wholePrice = 0;
+
+            if(document.getElementById("React").checked){
+                wholePrice += 5000;
+            }
+            if(document.getElementById("JavaScript").checked){
+                wholePrice += 3000;
+            }
+
+            let raty = document.getElementById("Raty").value;
+
+            let pricePerPay = wholePrice/raty;
+
+            document.getElementById("output").innerHTML = "Kurs odbędzie się w " + city + ". Koszt całkowity: " + wholePrice + "zł. Płacisz " + raty + " rat po " + pricePerPay + " zł";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="baner.png" alt="kursy komputerowe">
+    </header>
+    <menu>
+        <a href="index.html">Strona główna</a>
+        <a href="raty.html">Koszt rat</a>
+        <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+    </menu>
+    <main>
+        <h3>Oblicz miesięczną ratę</h3>
+        <input type="checkbox" class="kontrolki" id="React">
+        <label>Kurs React.js</label>
+        <br>
+        <input type="checkbox" class="kontrolki" id="JavaScript">
+        <label>Kurs JavaScript</label>
+        <br>
+        <label>Liczba rat: </label>
+        <input type="number" class="kontrolki" id="Raty">
+        <br>
+        <select class="kontrolki" id="Miasto">
+            <option>Warszawa</option>
+            <option>Katowice</option>
+            <option>Gdańsk</option>
+        </select>
+        <br>
+        <input type="button" value="Oblicz" onclick="calculate()" class="kontrolki">
+        <p id="output"></p>
+    </main>
+    <footer>
+        <p>Autor strony: Berk</p>
+    </footer>
+</body>
+</html>
