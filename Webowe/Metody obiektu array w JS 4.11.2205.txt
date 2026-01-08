@@ -1,0 +1,29 @@
+T: Metody obiektu array w JS
+Obiekt array jest wbudowanym typem danych służącym do przechowywania i zarządzania kolekcjami elementów - obiekt dziedziczy metody.
+
+Podział metod array:
+- Operujące na elementach tablicy:
+ -- forEach() - wykonuje funkcję dla każdego elementu tablicy
+ -- map() - tworzy nową tablicę na podstawie działania funkcji na elementach
+ -- filter() - tworzy nową tablicę zawierającą elementy spełniające warunek
+ -- reduce() - redukuje tablicę do jednej wartości poprzez działanie funkcji akumulatora
+metody te przyjmują inne funkcje jako argument.
+
+- Modyfikujące tablice:
+ -- push() - dodaje jeden lub więcej elementów na koniec tablicy
+ -- unshift() - dodaje jeden lub więcej elementów ma początek tablicy
+ -- pop() - usuwa ostatni element tablicy i zwraca jego wartość
+ -- shift() - usuwa pierwszy elemnt tablicy i zwraca jego wartość
+ -- splice() - modifikuje zawartość tablicy przez usuwanie, zamianę lub dodawanie elementów
+
+- Łączenia i kopiowania
+ -- concat() - łączy dwie lub więcej tablice w jedną nową
+ -- join() - tworzy łańcuch znaków z elementów tablicy
+ -- slice() - tworzy kopię części tablicy
+
+- Wyszukiwania elementów
+ -- indexOf() - zwraca index pierwszego wystąpienia określonego elementu
+ -- lastIndexOf() - zwraca index ostatniego wystąpienia określonego elementu
+ -- find() - zwtaca pierwszy element, który spełnia warunek
+ -- findIndex() - zwraca index pierwszego elementu który spełnia warunek
+ -- includes() - sprawdza, czy tablica zawiera określony element

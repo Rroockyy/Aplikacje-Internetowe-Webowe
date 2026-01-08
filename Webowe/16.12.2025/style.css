@@ -1,0 +1,22 @@
+header, footer{
+    background-color: gainsboro;
+}
+
+header{
+    position: absolute;
+}
+
+header, main, footer{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    width: 100%;
+}
+
+section{
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(17, 114, 130);
+}

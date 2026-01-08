@@ -1,0 +1,14 @@
+T: Date
+Obiekt date
+W JS do pracy z datami jest używany wbudowany obiekt Date, który bazuje na dacie lokalnego komputera.
+
+Metody get:
+getDate() - dzień miesiąca (1-31)
+getDay() - dzień tygodnia (niedziela - 0, poniedziałek - 1, itd.)
+getYear() - rok (1900-1999 liczba 2-cyfrowa)
+getFullYear() - rok (pełny rok)
+getMonth() - miesiąc (styczeń - 0, luty - 1, itd.)
+getHours() - godzina (0-23)
+gotMinutes() - minuy (0-59)
+getSeconds() - sekundy (0-59)
+getMilliseconds() - milisekundy (0-999)

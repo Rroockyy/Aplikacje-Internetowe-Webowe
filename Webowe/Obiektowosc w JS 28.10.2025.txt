@@ -1,0 +1,50 @@
+Siema Gunk
+T: Obiektowość w JS
+1. Obiekt
+- Wszystko co nie jest typem prymitywnym w JS jest obiektem
+- Obiektowość w JS oparta jest na prototypach które udostępniają włąściwości oraz metody - każdy obiekt ma prototyp
+- Prototyp przybiera formę konstruktora dla obiektu i pozwala dziedziczyć właściwości oraz metody obiektu określonego typu
+- Każdy obiekt w JS ma właściwość __proto__, która wskazuje na konstruktor (prototyp obiektu)
+
+const tab = [1, 2]; // tablica
+console.log(typeof tab); // obiekt
+console.log(tab.__proto__.construktor); // Array
+
+- Rodzaj prototypu jest zależny od typu obiektu (inny jest dla tablicy, a inny dla obiektu daty)
+2. Łańcuch prototypów
+- Łańcuch prototypów jest hierarchiczny - na szczycie znajduje się Object.prototype, a poniżej konstruktory obiektów
+
+3. Obiekty podstawowe:
+- Object - Podstawowy typ obiektu, baza dla wszystkich innych
+- Function - Representuje funkcje i ich właściwości
+- Boolean - Reprezentuje wartości logiczne
+- Symbol - Unikalne i niezmienne identyfikatory
+- Bigint - Liczby całkowite o dowolnej długości
+
+4. Obiekty matematyczne
+- Number - Reprezentuje liczby zmiennoprzecinkowe
+- Math - Zbiór funkcji matematycznych (np. Math.sqrt(), Math.random())
+- Date - Reprezentuje daty i czas
+
+5. Obiekty tekstowe
+- String - Reprezentuje tekst
+- RegExp - Wyrażenia regularne do dopasowywania wzorów w tekstach
+
+6. Obiekty kolekcji
+- Array - Tablice
+- Map - Kolekcja par klucz-wartość, gdzie klucze mogą być dowolnego typu
+- Set - Zbiór unikalnych wartości
+- WeakMap - Jak Map, ale klucze są "słabe" (nie zapobiegają usunięciu obiektu przez Garbage Collector)
+- WeakSet - Jak Set, ale z "słabymi" referencjami
+
+7. Obiekty obsługi błędów
+- Error - Podstawowy typ obiektu
+- RangeError - Błąd, gdy wartość jest poza zakresem
+- ReferenceError - Błąd, gdy odwołanie do niezdefiniowanej zmiennej
+- SyntaxError - Błąd składni
+- TypeError - Błąd typu danych
+- URIError - Błąd funkcji związanych z URI(np. decodeURI()) [hehe yuri]
+- AggregateError - Zbiór błędów np. w Promise.any()
+
+8. Obiekty obsługi asynchroniczności
+- Promise - Reprezentuje asynchroniczną operację
